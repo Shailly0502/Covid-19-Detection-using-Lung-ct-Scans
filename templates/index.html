@@ -1,0 +1,56 @@
+<html>
+<head>
+<style>
+body {
+  background-image: url('/static/indeximage.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}
+h1 {
+  font-size: 80px;  
+  padding-top: 80px;
+  padding-bottom:0px;
+  text-align: center;
+  color:white;
+}
+p {
+    font-size: 30px;
+    text-align: center;
+  color:white;
+}
+.myDiv {
+  position: absolute;
+  box-sizing:content-box;
+  background-color: white;
+  color: white;
+	padding:10px;
+  text-align: center;
+  color:black;
+  font-size: 20px;
+  width: 300px;
+  border: 20px black;
+  padding-top: 20px;
+  margin: 20px black;
+  
+  right:450px
+}
+</style>
+</head>
+<body>
+<h1><b>Covid-19 Detection</b></h1>
+<p><b>This website will detect Covid-19 infection from a person's Lung CT Scan with an accuracy of 96%</b></p>
+<div class="myDiv">
+<div class="row">
+    <div class="col">
+        <h4><b>Upload new File</b></h4> 
+<form action = "/" method = "post" enctype="multipart/form-data">  
+    <input type="file" name="file" />  
+    <input type = "submit" value="Upload">  
+</form>  
+     </div>
+</div>   
+</div>  
+</body>
+</html>
+
